@@ -1,0 +1,32 @@
+[2025-04-22T10:11:12.858+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-22T10:11:12.888+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: compress_file_on_upload.wait_for_file manual__2025-04-22T10:11:08.935711+00:00 [queued]>
+[2025-04-22T10:11:12.906+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: compress_file_on_upload.wait_for_file manual__2025-04-22T10:11:08.935711+00:00 [queued]>
+[2025-04-22T10:11:12.907+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-04-22T10:11:13.166+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonSensor): wait_for_file> on 2025-04-22 10:11:08.935711+00:00
+[2025-04-22T10:11:13.177+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=457) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-04-22T10:11:13.179+0000] {standard_task_runner.py:72} INFO - Started process 459 to run task
+[2025-04-22T10:11:13.182+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'compress_file_on_upload', 'wait_for_file', 'manual__2025-04-22T10:11:08.935711+00:00', '--job-id', '189', '--raw', '--subdir', 'DAGS_FOLDER/minio_file_compression_and_email.py', '--cfg-path', '/tmp/tmphp847rdc']
+[2025-04-22T10:11:13.183+0000] {standard_task_runner.py:105} INFO - Job 189: Subtask wait_for_file
+[2025-04-22T10:11:13.266+0000] {task_command.py:467} INFO - Running <TaskInstance: compress_file_on_upload.wait_for_file manual__2025-04-22T10:11:08.935711+00:00 [running]> on host 218dff27a00b
+[2025-04-22T10:11:13.417+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='compress_file_on_upload' AIRFLOW_CTX_TASK_ID='wait_for_file' AIRFLOW_CTX_EXECUTION_DATE='2025-04-22T10:11:08.935711+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-22T10:11:08.935711+00:00'
+[2025-04-22T10:11:13.419+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-22T10:11:13.420+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-22T10:11:13.421+0000] {logging_mixin.py:190} INFO - Current task name:wait_for_file state:running start_date:2025-04-22 10:11:12.890145+00:00
+[2025-04-22T10:11:13.421+0000] {logging_mixin.py:190} INFO - Dag name:compress_file_on_upload and current dag run status:running
+[2025-04-22T10:11:13.422+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-22T10:11:13.436+0000] {python.py:75} INFO - Poking callable: <function check_for_files at 0x7fc60c12f100>
+[2025-04-22T10:11:13.747+0000] {minio_file_compression_and_email.py:38} INFO - Listing objects in bucket: my-bucket, prefix: uploads/
+[2025-04-22T10:11:13.775+0000] {minio_file_compression_and_email.py:40} INFO - Raw response from MinIO: {'ResponseMetadata': {'RequestId': '18389C44885F9EB8', 'HostId': 'dd9025bab4ad464b049177c95eb6ebf374d3b3fd1af9251148b658df7ac2e3e8', 'HTTPStatusCode': 200, 'HTTPHeaders': {'accept-ranges': 'bytes', 'content-length': '505', 'content-type': 'application/xml', 'server': 'MinIO', 'strict-transport-security': 'max-age=31536000; includeSubDomains', 'vary': 'Origin, Accept-Encoding', 'x-amz-id-2': 'dd9025bab4ad464b049177c95eb6ebf374d3b3fd1af9251148b658df7ac2e3e8', 'x-amz-request-id': '18389C44885F9EB8', 'x-content-type-options': 'nosniff', 'x-ratelimit-limit': '856', 'x-ratelimit-remaining': '856', 'x-xss-protection': '1; mode=block', 'date': 'Tue, 22 Apr 2025 10:11:13 GMT'}, 'RetryAttempts': 0}, 'IsTruncated': False, 'Contents': [{'Key': 'uploads/Loan payments data.csv', 'LastModified': datetime.datetime(2025, 4, 22, 10, 10, 47, 944000, tzinfo=tzlocal()), 'ETag': '"f354864a37b2dbec495190058d427285"', 'Size': 44417, 'StorageClass': 'STANDARD'}], 'Name': 'my-bucket', 'Prefix': 'uploads/', 'MaxKeys': 1000, 'EncodingType': 'url', 'KeyCount': 1}
+[2025-04-22T10:11:13.776+0000] {minio_file_compression_and_email.py:52} INFO - Found files: ['uploads/Loan payments data.csv']
+[2025-04-22T10:11:13.801+0000] {base.py:339} INFO - Success criteria met. Exiting.
+[2025-04-22T10:11:13.820+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-22T10:11:13.821+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=compress_file_on_upload, task_id=wait_for_file, run_id=manual__2025-04-22T10:11:08.935711+00:00, execution_date=20250422T101108, start_date=20250422T101112, end_date=20250422T101113
+[2025-04-22T10:11:13.860+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-04-22T10:11:13.862+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-04-22T10:11:13.862+0000] {logging_mixin.py:190} INFO - Dag name:compress_file_on_upload queued_at:2025-04-22 10:11:08.952517+00:00
+[2025-04-22T10:11:13.863+0000] {logging_mixin.py:190} INFO - Task hostname:218dff27a00b operator:PythonSensor
+[2025-04-22T10:11:13.894+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-22T10:11:13.953+0000] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-04-22T10:11:13.957+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

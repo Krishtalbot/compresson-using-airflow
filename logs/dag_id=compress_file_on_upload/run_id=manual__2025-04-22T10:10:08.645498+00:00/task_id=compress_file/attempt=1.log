@@ -1,0 +1,43 @@
+[2025-04-22T10:10:14.334+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-22T10:10:14.355+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: compress_file_on_upload.compress_file manual__2025-04-22T10:10:08.645498+00:00 [queued]>
+[2025-04-22T10:10:14.366+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: compress_file_on_upload.compress_file manual__2025-04-22T10:10:08.645498+00:00 [queued]>
+[2025-04-22T10:10:14.366+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-04-22T10:10:14.540+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): compress_file> on 2025-04-22 10:10:08.645498+00:00
+[2025-04-22T10:10:14.548+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=424) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-04-22T10:10:14.549+0000] {standard_task_runner.py:72} INFO - Started process 426 to run task
+[2025-04-22T10:10:14.550+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'compress_file_on_upload', 'compress_file', 'manual__2025-04-22T10:10:08.645498+00:00', '--job-id', '187', '--raw', '--subdir', 'DAGS_FOLDER/minio_file_compression_and_email.py', '--cfg-path', '/tmp/tmpe9ytlygy']
+[2025-04-22T10:10:14.551+0000] {standard_task_runner.py:105} INFO - Job 187: Subtask compress_file
+[2025-04-22T10:10:14.592+0000] {task_command.py:467} INFO - Running <TaskInstance: compress_file_on_upload.compress_file manual__2025-04-22T10:10:08.645498+00:00 [running]> on host 218dff27a00b
+[2025-04-22T10:10:14.678+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='compress_file_on_upload' AIRFLOW_CTX_TASK_ID='compress_file' AIRFLOW_CTX_EXECUTION_DATE='2025-04-22T10:10:08.645498+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-22T10:10:08.645498+00:00'
+[2025-04-22T10:10:14.679+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-22T10:10:14.681+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-22T10:10:14.681+0000] {logging_mixin.py:190} INFO - Current task name:compress_file state:running start_date:2025-04-22 10:10:14.356210+00:00
+[2025-04-22T10:10:14.681+0000] {logging_mixin.py:190} INFO - Dag name:compress_file_on_upload and current dag run status:running
+[2025-04-22T10:10:14.682+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-22T10:10:14.778+0000] {minio_file_compression_and_email.py:76} INFO - Files from XCom: ['uploads/loan_data', 'uploads/test.txt']
+[2025-04-22T10:10:14.795+0000] {httpchecksum.py:481} INFO - Skipping checksum validation. Response did not contain one of the following algorithms: ['crc32', 'sha1', 'sha256'].
+[2025-04-22T10:10:14.799+0000] {httpchecksum.py:481} INFO - Skipping checksum validation. Response did not contain one of the following algorithms: ['crc32', 'sha1', 'sha256'].
+[2025-04-22T10:10:14.799+0000] {httpchecksum.py:481} INFO - Skipping checksum validation. Response did not contain one of the following algorithms: ['crc32', 'sha1', 'sha256'].
+[2025-04-22T10:10:14.802+0000] {httpchecksum.py:481} INFO - Skipping checksum validation. Response did not contain one of the following algorithms: ['crc32', 'sha1', 'sha256'].
+[2025-04-22T10:10:14.807+0000] {httpchecksum.py:481} INFO - Skipping checksum validation. Response did not contain one of the following algorithms: ['crc32', 'sha1', 'sha256'].
+[2025-04-22T10:10:14.810+0000] {httpchecksum.py:481} INFO - Skipping checksum validation. Response did not contain one of the following algorithms: ['crc32', 'sha1', 'sha256'].
+[2025-04-22T10:10:14.813+0000] {httpchecksum.py:481} INFO - Skipping checksum validation. Response did not contain one of the following algorithms: ['crc32', 'sha1', 'sha256'].
+[2025-04-22T10:10:14.816+0000] {httpchecksum.py:481} INFO - Skipping checksum validation. Response did not contain one of the following algorithms: ['crc32', 'sha1', 'sha256'].
+[2025-04-22T10:10:14.823+0000] {httpchecksum.py:481} INFO - Skipping checksum validation. Response did not contain one of the following algorithms: ['crc32', 'sha1', 'sha256'].
+[2025-04-22T10:10:14.824+0000] {httpchecksum.py:481} INFO - Skipping checksum validation. Response did not contain one of the following algorithms: ['crc32', 'sha1', 'sha256'].
+[2025-04-22T10:10:14.913+0000] {httpchecksum.py:481} INFO - Skipping checksum validation. Response did not contain one of the following algorithms: ['crc32', 'sha1', 'sha256'].
+[2025-04-22T10:10:17.457+0000] {minio_file_compression_and_email.py:110} INFO - Moving file from uploads/loan_data to processed/loan_data
+[2025-04-22T10:10:17.661+0000] {minio_file_compression_and_email.py:118} INFO - Deleting file from uploads/loan_data
+[2025-04-22T10:10:17.672+0000] {python.py:240} INFO - Done. Returned value was: Original File: loan_data, Size: 86471101 bytes
+Compressed File: loan_data.zip, Size: 22790269 bytes
+[2025-04-22T10:10:17.697+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-22T10:10:17.698+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=compress_file_on_upload, task_id=compress_file, run_id=manual__2025-04-22T10:10:08.645498+00:00, execution_date=20250422T101008, start_date=20250422T101014, end_date=20250422T101017
+[2025-04-22T10:10:17.724+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-04-22T10:10:17.724+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-04-22T10:10:17.726+0000] {logging_mixin.py:190} INFO - Dag name:compress_file_on_upload queued_at:2025-04-22 10:10:08.665781+00:00
+[2025-04-22T10:10:17.726+0000] {logging_mixin.py:190} INFO - Task hostname:218dff27a00b operator:PythonOperator
+[2025-04-22T10:10:17.769+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-22T10:10:17.792+0000] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-04-22T10:10:17.796+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

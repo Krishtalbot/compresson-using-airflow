@@ -1,0 +1,114 @@
+[2025-04-22T10:25:58.121+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-22T10:25:58.151+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: compress_file_on_upload.wait_for_file manual__2025-04-22T10:25:54.189813+00:00 [queued]>
+[2025-04-22T10:25:58.175+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: compress_file_on_upload.wait_for_file manual__2025-04-22T10:25:54.189813+00:00 [queued]>
+[2025-04-22T10:25:58.175+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-04-22T10:25:58.406+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonSensor): wait_for_file> on 2025-04-22 10:25:54.189813+00:00
+[2025-04-22T10:25:58.418+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=686) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-04-22T10:25:58.420+0000] {standard_task_runner.py:72} INFO - Started process 688 to run task
+[2025-04-22T10:25:58.423+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'compress_file_on_upload', 'wait_for_file', 'manual__2025-04-22T10:25:54.189813+00:00', '--job-id', '198', '--raw', '--subdir', 'DAGS_FOLDER/minio_file_compression_and_email.py', '--cfg-path', '/tmp/tmpr5sbrzx5']
+[2025-04-22T10:25:58.425+0000] {standard_task_runner.py:105} INFO - Job 198: Subtask wait_for_file
+[2025-04-22T10:25:58.501+0000] {task_command.py:467} INFO - Running <TaskInstance: compress_file_on_upload.wait_for_file manual__2025-04-22T10:25:54.189813+00:00 [running]> on host 218dff27a00b
+[2025-04-22T10:25:58.652+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='compress_file_on_upload' AIRFLOW_CTX_TASK_ID='wait_for_file' AIRFLOW_CTX_EXECUTION_DATE='2025-04-22T10:25:54.189813+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-22T10:25:54.189813+00:00'
+[2025-04-22T10:25:58.655+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-22T10:25:58.656+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-22T10:25:58.657+0000] {logging_mixin.py:190} INFO - Current task name:wait_for_file state:running start_date:2025-04-22 10:25:58.153311+00:00
+[2025-04-22T10:25:58.658+0000] {logging_mixin.py:190} INFO - Dag name:compress_file_on_upload and current dag run status:running
+[2025-04-22T10:25:58.658+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-22T10:25:58.675+0000] {python.py:75} INFO - Poking callable: <function check_for_files at 0x7fc60c12f100>
+[2025-04-22T10:25:59.079+0000] {minio_file_compression_and_email.py:44} INFO - Listing objects in bucket: my-bucket, prefix: uploads/
+[2025-04-22T10:25:59.131+0000] {minio_file_compression_and_email.py:46} INFO - Raw response from MinIO: {'ResponseMetadata': {'RequestId': '18389D12AA7D8B20', 'HostId': 'dd9025bab4ad464b049177c95eb6ebf374d3b3fd1af9251148b658df7ac2e3e8', 'HTTPStatusCode': 200, 'HTTPHeaders': {'accept-ranges': 'bytes', 'content-length': '280', 'content-type': 'application/xml', 'server': 'MinIO', 'strict-transport-security': 'max-age=31536000; includeSubDomains', 'vary': 'Origin, Accept-Encoding', 'x-amz-id-2': 'dd9025bab4ad464b049177c95eb6ebf374d3b3fd1af9251148b658df7ac2e3e8', 'x-amz-request-id': '18389D12AA7D8B20', 'x-content-type-options': 'nosniff', 'x-ratelimit-limit': '856', 'x-ratelimit-remaining': '856', 'x-xss-protection': '1; mode=block', 'date': 'Tue, 22 Apr 2025 10:25:59 GMT'}, 'RetryAttempts': 0}, 'IsTruncated': False, 'Name': 'my-bucket', 'Prefix': 'uploads/', 'MaxKeys': 1000, 'EncodingType': 'url', 'KeyCount': 0}
+[2025-04-22T10:25:59.132+0000] {minio_file_compression_and_email.py:49} INFO - No 'Contents' key in response. Bucket might be empty or prefix incorrect.
+[2025-04-22T10:25:59.170+0000] {taskinstance.py:310} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2025-04-22T10:25:59.172+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-22T10:25:59.222+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-22T10:25:59.283+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-22T10:25:59.288+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2025-04-22T10:26:04.296+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-22T10:26:04.328+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: compress_file_on_upload.wait_for_file manual__2025-04-22T10:25:54.189813+00:00 [queued]>
+[2025-04-22T10:26:04.347+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: compress_file_on_upload.wait_for_file manual__2025-04-22T10:25:54.189813+00:00 [queued]>
+[2025-04-22T10:26:04.348+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-04-22T10:26:04.572+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonSensor): wait_for_file> on 2025-04-22 10:25:54.189813+00:00
+[2025-04-22T10:26:04.586+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=690) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-04-22T10:26:04.590+0000] {standard_task_runner.py:72} INFO - Started process 692 to run task
+[2025-04-22T10:26:04.591+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'compress_file_on_upload', 'wait_for_file', 'manual__2025-04-22T10:25:54.189813+00:00', '--job-id', '199', '--raw', '--subdir', 'DAGS_FOLDER/minio_file_compression_and_email.py', '--cfg-path', '/tmp/tmp2oe7fprc']
+[2025-04-22T10:26:04.594+0000] {standard_task_runner.py:105} INFO - Job 199: Subtask wait_for_file
+[2025-04-22T10:26:04.681+0000] {task_command.py:467} INFO - Running <TaskInstance: compress_file_on_upload.wait_for_file manual__2025-04-22T10:25:54.189813+00:00 [running]> on host 218dff27a00b
+[2025-04-22T10:26:04.849+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='compress_file_on_upload' AIRFLOW_CTX_TASK_ID='wait_for_file' AIRFLOW_CTX_EXECUTION_DATE='2025-04-22T10:25:54.189813+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-22T10:25:54.189813+00:00'
+[2025-04-22T10:26:04.852+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-22T10:26:04.853+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-22T10:26:04.854+0000] {logging_mixin.py:190} INFO - Current task name:wait_for_file state:running start_date:2025-04-22 10:26:04.329468+00:00
+[2025-04-22T10:26:04.855+0000] {logging_mixin.py:190} INFO - Dag name:compress_file_on_upload and current dag run status:running
+[2025-04-22T10:26:04.855+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-22T10:26:04.870+0000] {python.py:75} INFO - Poking callable: <function check_for_files at 0x7fc60c12f100>
+[2025-04-22T10:26:05.046+0000] {minio_file_compression_and_email.py:44} INFO - Listing objects in bucket: my-bucket, prefix: uploads/
+[2025-04-22T10:26:05.069+0000] {minio_file_compression_and_email.py:46} INFO - Raw response from MinIO: {'ResponseMetadata': {'RequestId': '18389D140DE9843A', 'HostId': 'dd9025bab4ad464b049177c95eb6ebf374d3b3fd1af9251148b658df7ac2e3e8', 'HTTPStatusCode': 200, 'HTTPHeaders': {'accept-ranges': 'bytes', 'content-length': '280', 'content-type': 'application/xml', 'server': 'MinIO', 'strict-transport-security': 'max-age=31536000; includeSubDomains', 'vary': 'Origin, Accept-Encoding', 'x-amz-id-2': 'dd9025bab4ad464b049177c95eb6ebf374d3b3fd1af9251148b658df7ac2e3e8', 'x-amz-request-id': '18389D140DE9843A', 'x-content-type-options': 'nosniff', 'x-ratelimit-limit': '856', 'x-ratelimit-remaining': '856', 'x-xss-protection': '1; mode=block', 'date': 'Tue, 22 Apr 2025 10:26:05 GMT'}, 'RetryAttempts': 0}, 'IsTruncated': False, 'Name': 'my-bucket', 'Prefix': 'uploads/', 'MaxKeys': 1000, 'EncodingType': 'url', 'KeyCount': 0}
+[2025-04-22T10:26:05.070+0000] {minio_file_compression_and_email.py:49} INFO - No 'Contents' key in response. Bucket might be empty or prefix incorrect.
+[2025-04-22T10:26:05.113+0000] {taskinstance.py:310} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2025-04-22T10:26:05.114+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-22T10:26:05.143+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-22T10:26:05.202+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-22T10:26:05.207+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2025-04-22T10:26:08.787+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-22T10:26:08.818+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: compress_file_on_upload.wait_for_file manual__2025-04-22T10:25:54.189813+00:00 [queued]>
+[2025-04-22T10:26:08.836+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: compress_file_on_upload.wait_for_file manual__2025-04-22T10:25:54.189813+00:00 [queued]>
+[2025-04-22T10:26:08.837+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-04-22T10:26:09.077+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonSensor): wait_for_file> on 2025-04-22 10:25:54.189813+00:00
+[2025-04-22T10:26:09.090+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'compress_file_on_upload', 'wait_for_file', 'manual__2025-04-22T10:25:54.189813+00:00', '--job-id', '200', '--raw', '--subdir', 'DAGS_FOLDER/minio_file_compression_and_email.py', '--cfg-path', '/tmp/tmpp72h3wby']
+[2025-04-22T10:26:09.089+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=694) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-04-22T10:26:09.092+0000] {standard_task_runner.py:105} INFO - Job 200: Subtask wait_for_file
+[2025-04-22T10:26:09.093+0000] {standard_task_runner.py:72} INFO - Started process 696 to run task
+[2025-04-22T10:26:09.183+0000] {task_command.py:467} INFO - Running <TaskInstance: compress_file_on_upload.wait_for_file manual__2025-04-22T10:25:54.189813+00:00 [running]> on host 218dff27a00b
+[2025-04-22T10:26:09.338+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='compress_file_on_upload' AIRFLOW_CTX_TASK_ID='wait_for_file' AIRFLOW_CTX_EXECUTION_DATE='2025-04-22T10:25:54.189813+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-22T10:25:54.189813+00:00'
+[2025-04-22T10:26:09.342+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-22T10:26:09.343+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-22T10:26:09.344+0000] {logging_mixin.py:190} INFO - Current task name:wait_for_file state:running start_date:2025-04-22 10:26:08.819399+00:00
+[2025-04-22T10:26:09.345+0000] {logging_mixin.py:190} INFO - Dag name:compress_file_on_upload and current dag run status:running
+[2025-04-22T10:26:09.345+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-22T10:26:09.360+0000] {python.py:75} INFO - Poking callable: <function check_for_files at 0x7fc60c12f100>
+[2025-04-22T10:26:09.580+0000] {minio_file_compression_and_email.py:44} INFO - Listing objects in bucket: my-bucket, prefix: uploads/
+[2025-04-22T10:26:09.598+0000] {minio_file_compression_and_email.py:46} INFO - Raw response from MinIO: {'ResponseMetadata': {'RequestId': '18389D151BDC912A', 'HostId': 'dd9025bab4ad464b049177c95eb6ebf374d3b3fd1af9251148b658df7ac2e3e8', 'HTTPStatusCode': 200, 'HTTPHeaders': {'accept-ranges': 'bytes', 'content-length': '280', 'content-type': 'application/xml', 'server': 'MinIO', 'strict-transport-security': 'max-age=31536000; includeSubDomains', 'vary': 'Origin, Accept-Encoding', 'x-amz-id-2': 'dd9025bab4ad464b049177c95eb6ebf374d3b3fd1af9251148b658df7ac2e3e8', 'x-amz-request-id': '18389D151BDC912A', 'x-content-type-options': 'nosniff', 'x-ratelimit-limit': '856', 'x-ratelimit-remaining': '856', 'x-xss-protection': '1; mode=block', 'date': 'Tue, 22 Apr 2025 10:26:09 GMT'}, 'RetryAttempts': 0}, 'IsTruncated': False, 'Name': 'my-bucket', 'Prefix': 'uploads/', 'MaxKeys': 1000, 'EncodingType': 'url', 'KeyCount': 0}
+[2025-04-22T10:26:09.599+0000] {minio_file_compression_and_email.py:49} INFO - No 'Contents' key in response. Bucket might be empty or prefix incorrect.
+[2025-04-22T10:26:09.635+0000] {taskinstance.py:310} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2025-04-22T10:26:09.635+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-22T10:26:09.653+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-22T10:26:09.690+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-22T10:26:09.694+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2025-04-22T10:26:13.767+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-22T10:26:13.798+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: compress_file_on_upload.wait_for_file manual__2025-04-22T10:25:54.189813+00:00 [queued]>
+[2025-04-22T10:26:13.815+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: compress_file_on_upload.wait_for_file manual__2025-04-22T10:25:54.189813+00:00 [queued]>
+[2025-04-22T10:26:13.816+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-04-22T10:26:14.050+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonSensor): wait_for_file> on 2025-04-22 10:25:54.189813+00:00
+[2025-04-22T10:26:14.062+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=698) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-04-22T10:26:14.064+0000] {standard_task_runner.py:72} INFO - Started process 700 to run task
+[2025-04-22T10:26:14.067+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'compress_file_on_upload', 'wait_for_file', 'manual__2025-04-22T10:25:54.189813+00:00', '--job-id', '201', '--raw', '--subdir', 'DAGS_FOLDER/minio_file_compression_and_email.py', '--cfg-path', '/tmp/tmpsuf2iika']
+[2025-04-22T10:26:14.069+0000] {standard_task_runner.py:105} INFO - Job 201: Subtask wait_for_file
+[2025-04-22T10:26:14.161+0000] {task_command.py:467} INFO - Running <TaskInstance: compress_file_on_upload.wait_for_file manual__2025-04-22T10:25:54.189813+00:00 [running]> on host 218dff27a00b
+[2025-04-22T10:26:14.284+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='compress_file_on_upload' AIRFLOW_CTX_TASK_ID='wait_for_file' AIRFLOW_CTX_EXECUTION_DATE='2025-04-22T10:25:54.189813+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-22T10:25:54.189813+00:00'
+[2025-04-22T10:26:14.286+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-22T10:26:14.287+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-22T10:26:14.288+0000] {logging_mixin.py:190} INFO - Current task name:wait_for_file state:running start_date:2025-04-22 10:26:13.798935+00:00
+[2025-04-22T10:26:14.288+0000] {logging_mixin.py:190} INFO - Dag name:compress_file_on_upload and current dag run status:running
+[2025-04-22T10:26:14.289+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-22T10:26:14.305+0000] {python.py:75} INFO - Poking callable: <function check_for_files at 0x7fc60c12f100>
+[2025-04-22T10:26:14.737+0000] {minio_file_compression_and_email.py:44} INFO - Listing objects in bucket: my-bucket, prefix: uploads/
+[2025-04-22T10:26:14.756+0000] {minio_file_compression_and_email.py:46} INFO - Raw response from MinIO: {'ResponseMetadata': {'RequestId': '18389D164F3BB695', 'HostId': 'dd9025bab4ad464b049177c95eb6ebf374d3b3fd1af9251148b658df7ac2e3e8', 'HTTPStatusCode': 200, 'HTTPHeaders': {'accept-ranges': 'bytes', 'content-length': '508', 'content-type': 'application/xml', 'server': 'MinIO', 'strict-transport-security': 'max-age=31536000; includeSubDomains', 'vary': 'Origin, Accept-Encoding', 'x-amz-id-2': 'dd9025bab4ad464b049177c95eb6ebf374d3b3fd1af9251148b658df7ac2e3e8', 'x-amz-request-id': '18389D164F3BB695', 'x-content-type-options': 'nosniff', 'x-ratelimit-limit': '856', 'x-ratelimit-remaining': '856', 'x-xss-protection': '1; mode=block', 'date': 'Tue, 22 Apr 2025 10:26:14 GMT'}, 'RetryAttempts': 0}, 'IsTruncated': False, 'Contents': [{'Key': 'uploads/whatsay-1.2.2.AppImage', 'LastModified': datetime.datetime(2025, 4, 22, 10, 26, 13, 268000, tzinfo=tzlocal()), 'ETag': '"2774d7c7865e0f10114dfa0c543e5740"', 'Size': 80001199, 'StorageClass': 'STANDARD'}], 'Name': 'my-bucket', 'Prefix': 'uploads/', 'MaxKeys': 1000, 'EncodingType': 'url', 'KeyCount': 1}
+[2025-04-22T10:26:14.757+0000] {minio_file_compression_and_email.py:57} INFO - Found files: ['uploads/whatsay-1.2.2.AppImage']
+[2025-04-22T10:26:14.758+0000] {minio_file_compression_and_email.py:63} INFO - New files detected: ['uploads/whatsay-1.2.2.AppImage']
+[2025-04-22T10:26:14.782+0000] {base.py:339} INFO - Success criteria met. Exiting.
+[2025-04-22T10:26:14.803+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-22T10:26:14.804+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=compress_file_on_upload, task_id=wait_for_file, run_id=manual__2025-04-22T10:25:54.189813+00:00, execution_date=20250422T102554, start_date=20250422T102613, end_date=20250422T102614
+[2025-04-22T10:26:14.845+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-04-22T10:26:14.846+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-04-22T10:26:14.847+0000] {logging_mixin.py:190} INFO - Dag name:compress_file_on_upload queued_at:2025-04-22 10:25:54.217432+00:00
+[2025-04-22T10:26:14.847+0000] {logging_mixin.py:190} INFO - Task hostname:218dff27a00b operator:PythonSensor
+[2025-04-22T10:26:14.906+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-22T10:26:14.971+0000] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-04-22T10:26:14.976+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

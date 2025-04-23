@@ -1,0 +1,41 @@
+[2025-04-22T09:05:40.106+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-22T09:05:40.122+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: minio_file_monitoring_compression_dag.setup_minio_buckets scheduled__2025-04-22T09:04:00+00:00 [queued]>
+[2025-04-22T09:05:40.130+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: minio_file_monitoring_compression_dag.setup_minio_buckets scheduled__2025-04-22T09:04:00+00:00 [queued]>
+[2025-04-22T09:05:40.130+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-04-22T09:05:40.335+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): setup_minio_buckets> on 2025-04-22 09:04:00+00:00
+[2025-04-22T09:05:40.343+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=93) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-04-22T09:05:40.345+0000] {standard_task_runner.py:72} INFO - Started process 98 to run task
+[2025-04-22T09:05:40.345+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'minio_file_monitoring_compression_dag', 'setup_minio_buckets', 'scheduled__2025-04-22T09:04:00+00:00', '--job-id', '64', '--raw', '--subdir', 'DAGS_FOLDER/minio_file_compression_and_email.py', '--cfg-path', '/tmp/tmp1fec45ys']
+[2025-04-22T09:05:40.347+0000] {standard_task_runner.py:105} INFO - Job 64: Subtask setup_minio_buckets
+[2025-04-22T09:05:40.391+0000] {task_command.py:467} INFO - Running <TaskInstance: minio_file_monitoring_compression_dag.setup_minio_buckets scheduled__2025-04-22T09:04:00+00:00 [running]> on host 00ea650ea0df
+[2025-04-22T09:05:40.488+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='krishtaltiwari@gmail.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='minio_file_monitoring_compression_dag' AIRFLOW_CTX_TASK_ID='setup_minio_buckets' AIRFLOW_CTX_EXECUTION_DATE='2025-04-22T09:04:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-04-22T09:04:00+00:00'
+[2025-04-22T09:05:40.490+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-22T09:05:40.490+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-22T09:05:40.490+0000] {logging_mixin.py:190} INFO - Current task name:setup_minio_buckets state:running start_date:2025-04-22 09:05:40.122805+00:00
+[2025-04-22T09:05:40.491+0000] {logging_mixin.py:190} INFO - Dag name:minio_file_monitoring_compression_dag and current dag run status:running
+[2025-04-22T09:05:40.491+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-22T09:05:40.492+0000] {minio_file_compression_and_email.py:72} INFO - Starting MinIO bucket setup...
+[2025-04-22T09:05:40.500+0000] {base.py:84} INFO - Retrieving connection 'minio_s3'
+[2025-04-22T09:05:40.500+0000] {minio_file_compression_and_email.py:49} INFO - Retrieved MinIO credentials from Airflow connection 'minio_s3'
+[2025-04-22T09:05:40.696+0000] {minio_file_compression_and_email.py:66} INFO - Successfully created MinIO client with endpoint http://minio:9000
+[2025-04-22T09:05:40.708+0000] {minio_file_compression_and_email.py:78} INFO - Bucket 'my-bucket' exists and is accessible
+[2025-04-22T09:05:40.708+0000] {minio_file_compression_and_email.py:91} INFO - Creating prefix uploads/ in bucket my-bucket
+[2025-04-22T09:05:40.815+0000] {minio_file_compression_and_email.py:97} INFO - Successfully created prefix uploads/
+[2025-04-22T09:05:40.815+0000] {minio_file_compression_and_email.py:91} INFO - Creating prefix processed/ in bucket my-bucket
+[2025-04-22T09:05:40.832+0000] {minio_file_compression_and_email.py:97} INFO - Successfully created prefix processed/
+[2025-04-22T09:05:40.834+0000] {minio_file_compression_and_email.py:91} INFO - Creating prefix compressed/ in bucket my-bucket
+[2025-04-22T09:05:40.864+0000] {minio_file_compression_and_email.py:97} INFO - Successfully created prefix compressed/
+[2025-04-22T09:05:40.865+0000] {python.py:240} INFO - Done. Returned value was: MinIO buckets and folders setup complete
+[2025-04-22T09:05:40.887+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-22T09:05:40.888+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=minio_file_monitoring_compression_dag, task_id=setup_minio_buckets, run_id=scheduled__2025-04-22T09:04:00+00:00, execution_date=20250422T090400, start_date=20250422T090540, end_date=20250422T090540
+[2025-04-22T09:05:40.912+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-04-22T09:05:40.913+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-04-22T09:05:40.915+0000] {logging_mixin.py:190} INFO - Dag name:minio_file_monitoring_compression_dag queued_at:2025-04-22 09:05:35.122895+00:00
+[2025-04-22T09:05:40.915+0000] {logging_mixin.py:190} INFO - Task hostname:00ea650ea0df operator:PythonOperator
+[2025-04-22T09:05:40.935+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-22T09:05:40.950+0000] {dagrun.py:977} ERROR - Failed to get task for ti <TaskInstance: minio_file_monitoring_compression_dag.skip_processing scheduled__2025-04-22T09:04:00+00:00 [None]>. Marking it as removed.
+[2025-04-22T09:05:40.953+0000] {dagrun.py:977} ERROR - Failed to get task for ti <TaskInstance: minio_file_monitoring_compression_dag.check_file_detected scheduled__2025-04-22T09:04:00+00:00 [None]>. Marking it as removed.
+[2025-04-22T09:05:40.969+0000] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-04-22T09:05:40.972+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

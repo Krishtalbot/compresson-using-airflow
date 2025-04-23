@@ -1,0 +1,1750 @@
+[2025-04-22T06:58:04.911+0000] {processor.py:186} INFO - Started process (PID=1436) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T06:58:04.913+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T06:58:04.918+0000] {logging_mixin.py:190} INFO - [2025-04-22T06:58:04.917+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T06:58:04.929+0000] {logging_mixin.py:190} INFO - [2025-04-22T06:58:04.927+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 7
+    tags = ["Email", "Compress"]
+           ^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+[2025-04-22T06:58:04.930+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T06:58:04.964+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.062 seconds
+[2025-04-22T06:58:35.701+0000] {processor.py:186} INFO - Started process (PID=1505) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T06:58:35.703+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T06:58:35.709+0000] {logging_mixin.py:190} INFO - [2025-04-22T06:58:35.709+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T06:58:35.722+0000] {logging_mixin.py:190} INFO - [2025-04-22T06:58:35.720+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 7
+    tags = ["Email", "Compress"]
+           ^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+[2025-04-22T06:58:35.723+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T06:58:35.764+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.075 seconds
+[2025-04-22T06:59:06.462+0000] {processor.py:186} INFO - Started process (PID=1575) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T06:59:06.463+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T06:59:06.469+0000] {logging_mixin.py:190} INFO - [2025-04-22T06:59:06.468+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T06:59:06.475+0000] {logging_mixin.py:190} INFO - [2025-04-22T06:59:06.473+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 7
+    tags = ["Email", "Compress"]
+           ^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+[2025-04-22T06:59:06.476+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T06:59:06.503+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.052 seconds
+[2025-04-22T06:59:36.596+0000] {processor.py:186} INFO - Started process (PID=1645) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T06:59:36.598+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T06:59:36.604+0000] {logging_mixin.py:190} INFO - [2025-04-22T06:59:36.604+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T06:59:36.613+0000] {logging_mixin.py:190} INFO - [2025-04-22T06:59:36.611+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 7
+    tags = ["Email", "Compress"]
+           ^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+[2025-04-22T06:59:36.614+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T06:59:36.659+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.071 seconds
+[2025-04-22T07:00:06.800+0000] {processor.py:186} INFO - Started process (PID=1715) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:00:06.802+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:00:06.808+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:00:06.807+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:00:06.817+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:00:06.815+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 7
+    tags = ["Email", "Compress"]
+           ^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+[2025-04-22T07:00:06.818+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:00:06.856+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.068 seconds
+[2025-04-22T07:00:37.357+0000] {processor.py:186} INFO - Started process (PID=1785) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:00:37.359+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:00:37.366+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:00:37.365+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:00:37.377+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:00:37.374+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 7
+    tags = ["Email", "Compress"]
+           ^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+[2025-04-22T07:00:37.379+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:00:37.421+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.077 seconds
+[2025-04-22T07:01:07.597+0000] {processor.py:186} INFO - Started process (PID=1855) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:01:07.599+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:01:07.605+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:01:07.605+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:01:07.617+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:01:07.614+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 7
+    tags = ["Email", "Compress"]
+           ^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+[2025-04-22T07:01:07.618+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:01:07.660+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.074 seconds
+[2025-04-22T07:01:37.938+0000] {processor.py:186} INFO - Started process (PID=1925) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:01:37.940+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:01:37.946+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:01:37.945+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:01:37.959+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:01:37.957+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 7
+    tags = ["Email", "Compress"]
+           ^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+[2025-04-22T07:01:37.960+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:01:38.002+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.077 seconds
+[2025-04-22T07:02:08.644+0000] {processor.py:186} INFO - Started process (PID=1995) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:02:08.645+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:02:08.650+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:02:08.650+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:02:08.656+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:02:08.655+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 7
+    tags = ["Email", "Compress"]
+           ^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+[2025-04-22T07:02:08.657+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:02:08.683+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.046 seconds
+[2025-04-22T07:02:39.106+0000] {processor.py:186} INFO - Started process (PID=2065) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:02:39.108+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:02:39.113+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:02:39.112+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:02:39.125+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:02:39.122+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 7
+    tags = ["Email", "Compress"]
+           ^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+[2025-04-22T07:02:39.126+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:02:39.157+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.063 seconds
+[2025-04-22T07:03:09.390+0000] {processor.py:186} INFO - Started process (PID=2135) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:03:09.390+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:03:09.392+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:03:09.392+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:03:09.395+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:03:09.395+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 7
+    tags = ["Email", "Compress"]
+           ^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+[2025-04-22T07:03:09.396+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:03:09.409+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.023 seconds
+[2025-04-22T07:03:39.620+0000] {processor.py:186} INFO - Started process (PID=2205) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:03:39.620+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:03:39.622+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:03:39.622+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:03:39.626+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:03:39.625+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 7
+    tags = ["Email", "Compress"]
+           ^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+[2025-04-22T07:03:39.626+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:03:39.643+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.027 seconds
+[2025-04-22T07:04:10.410+0000] {processor.py:186} INFO - Started process (PID=2281) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:04:10.411+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:04:10.414+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:04:10.413+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:04:10.418+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:04:10.417+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 7
+    tags = ["Email", "Compress"]
+           ^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+[2025-04-22T07:04:10.418+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:04:10.435+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.030 seconds
+[2025-04-22T07:04:41.004+0000] {processor.py:186} INFO - Started process (PID=2351) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:04:41.005+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:04:41.008+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:04:41.008+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:04:41.011+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:04:41.010+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 7
+    tags = ["Email", "Compress"]
+           ^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+[2025-04-22T07:04:41.011+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:04:41.027+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.027 seconds
+[2025-04-22T07:05:11.388+0000] {processor.py:186} INFO - Started process (PID=2421) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:05:11.389+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:05:11.391+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:05:11.391+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:05:11.394+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:05:11.394+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 7
+    tags = ["Email", "Compress"]
+           ^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+[2025-04-22T07:05:11.395+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:05:11.410+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.025 seconds
+[2025-04-22T07:05:41.846+0000] {processor.py:186} INFO - Started process (PID=2491) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:05:41.847+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:05:41.849+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:05:41.849+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:05:41.852+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:05:41.851+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 7
+    tags = ["Email", "Compress"]
+           ^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+[2025-04-22T07:05:41.852+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:05:41.869+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.027 seconds
+[2025-04-22T07:06:12.179+0000] {processor.py:186} INFO - Started process (PID=2561) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:06:12.179+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:06:12.181+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:06:12.181+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:06:12.187+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:06:12.187+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 7
+    tags = ["Email", "Compress"]
+           ^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+[2025-04-22T07:06:12.188+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:06:12.202+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.028 seconds
+[2025-04-22T07:06:42.723+0000] {processor.py:186} INFO - Started process (PID=2631) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:06:42.723+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:06:42.725+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:06:42.725+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:06:42.728+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:06:42.727+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 7
+    tags = ["Email", "Compress"]
+           ^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+[2025-04-22T07:06:42.728+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:06:42.744+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.025 seconds
+[2025-04-22T07:07:13.044+0000] {processor.py:186} INFO - Started process (PID=2701) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:07:13.045+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:07:13.047+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:07:13.047+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:07:13.050+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:07:13.049+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 7
+    tags = ["Email", "Compress"]
+           ^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+[2025-04-22T07:07:13.051+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:07:13.067+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.027 seconds
+[2025-04-22T07:07:43.226+0000] {processor.py:186} INFO - Started process (PID=2771) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:07:43.228+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:07:43.231+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:07:43.230+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:07:43.234+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:07:43.233+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 7
+    tags = ["Email", "Compress"]
+           ^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+[2025-04-22T07:07:43.234+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:07:43.249+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.026 seconds
+[2025-04-22T07:08:14.033+0000] {processor.py:186} INFO - Started process (PID=2841) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:08:14.033+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:08:14.035+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:08:14.035+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:08:14.038+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:08:14.037+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 7
+    tags = ["Email", "Compress"]
+           ^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+[2025-04-22T07:08:14.039+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:08:14.054+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.025 seconds
+[2025-04-22T07:08:44.767+0000] {processor.py:186} INFO - Started process (PID=2911) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:08:44.768+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:08:44.771+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:08:44.770+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:08:44.774+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:08:44.773+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 7
+    tags = ["Email", "Compress"]
+           ^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+[2025-04-22T07:08:44.775+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:08:44.789+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.025 seconds
+[2025-04-22T07:09:15.344+0000] {processor.py:186} INFO - Started process (PID=2981) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:09:15.344+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:09:15.346+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:09:15.346+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:09:15.349+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:09:15.348+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 7
+    tags = ["Email", "Compress"]
+           ^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+[2025-04-22T07:09:15.349+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:09:15.364+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.024 seconds
+[2025-04-22T07:09:45.457+0000] {processor.py:186} INFO - Started process (PID=3051) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:09:45.458+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:09:45.461+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:09:45.460+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:09:45.464+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:09:45.463+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 7
+    tags = ["Email", "Compress"]
+           ^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+[2025-04-22T07:09:45.464+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:09:45.478+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.025 seconds
+[2025-04-22T07:10:02.082+0000] {processor.py:186} INFO - Started process (PID=3063) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:10:02.082+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:10:02.084+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:10:02.084+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:10:02.088+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:10:02.087+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:10:02.088+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:10:02.106+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.028 seconds
+[2025-04-22T07:10:32.393+0000] {processor.py:186} INFO - Started process (PID=3133) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:10:32.393+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:10:32.395+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:10:32.395+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:10:32.404+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:10:32.403+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:10:32.405+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:10:32.421+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.033 seconds
+[2025-04-22T07:11:03.367+0000] {processor.py:186} INFO - Started process (PID=3203) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:11:03.367+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:11:03.369+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:11:03.369+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:11:03.373+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:11:03.372+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:11:03.374+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:11:03.390+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.027 seconds
+[2025-04-22T07:11:33.501+0000] {processor.py:186} INFO - Started process (PID=3273) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:11:33.502+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:11:33.504+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:11:33.504+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:11:33.508+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:11:33.508+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:11:33.509+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:11:33.526+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.029 seconds
+[2025-04-22T07:12:03.695+0000] {processor.py:186} INFO - Started process (PID=3343) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:12:03.696+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:12:03.698+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:12:03.698+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:12:03.703+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:12:03.702+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:12:03.703+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:12:03.721+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.030 seconds
+[2025-04-22T07:12:34.298+0000] {processor.py:186} INFO - Started process (PID=3413) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:12:34.299+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:12:34.300+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:12:34.300+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:12:34.303+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:12:34.302+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:12:34.304+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:12:34.320+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.026 seconds
+[2025-04-22T07:13:05.091+0000] {processor.py:186} INFO - Started process (PID=3483) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:13:05.091+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:13:05.093+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:13:05.093+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:13:05.096+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:13:05.095+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:13:05.096+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:13:05.112+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.025 seconds
+[2025-04-22T07:13:36.033+0000] {processor.py:186} INFO - Started process (PID=3553) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:13:36.034+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:13:36.036+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:13:36.036+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:13:36.040+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:13:36.039+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:13:36.040+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:13:36.060+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.032 seconds
+[2025-04-22T07:14:06.953+0000] {processor.py:186} INFO - Started process (PID=3623) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:14:06.954+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:14:06.956+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:14:06.956+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:14:06.959+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:14:06.958+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:14:06.959+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:14:06.978+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.029 seconds
+[2025-04-22T07:14:37.829+0000] {processor.py:186} INFO - Started process (PID=3693) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:14:37.829+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:14:37.832+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:14:37.831+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:14:37.834+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:14:37.834+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:14:37.835+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:14:37.850+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.025 seconds
+[2025-04-22T07:15:07.886+0000] {processor.py:186} INFO - Started process (PID=3763) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:15:07.887+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:15:07.889+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:15:07.889+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:15:07.893+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:15:07.892+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:15:07.893+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:15:07.910+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.029 seconds
+[2025-04-22T07:15:37.986+0000] {processor.py:186} INFO - Started process (PID=3833) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:15:37.987+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:15:37.988+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:15:37.988+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:15:37.991+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:15:37.991+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:15:37.992+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:15:38.006+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.024 seconds
+[2025-04-22T07:16:08.513+0000] {processor.py:186} INFO - Started process (PID=3897) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:16:08.514+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:16:08.516+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:16:08.515+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:16:08.518+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:16:08.518+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:16:08.519+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:16:08.537+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.028 seconds
+[2025-04-22T07:16:38.680+0000] {processor.py:186} INFO - Started process (PID=3967) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:16:38.681+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:16:38.684+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:16:38.683+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:16:38.687+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:16:38.686+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:16:38.687+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:16:38.707+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.031 seconds
+[2025-04-22T07:17:08.882+0000] {processor.py:186} INFO - Started process (PID=4037) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:17:08.883+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:17:08.886+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:17:08.886+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:17:08.889+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:17:08.888+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:17:08.890+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:17:08.909+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.030 seconds
+[2025-04-22T07:17:38.936+0000] {processor.py:186} INFO - Started process (PID=4107) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:17:38.937+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:17:38.938+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:17:38.938+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:17:38.941+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:17:38.941+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:17:38.942+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:17:38.958+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.027 seconds
+[2025-04-22T07:19:06.635+0000] {processor.py:186} INFO - Started process (PID=68) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:19:06.636+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:19:06.639+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:19:06.638+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:19:06.644+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:19:06.642+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:19:06.645+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:19:06.663+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.034 seconds
+[2025-04-22T07:19:37.454+0000] {processor.py:186} INFO - Started process (PID=138) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:19:37.455+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:19:37.457+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:19:37.457+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:19:37.461+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:19:37.459+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:19:37.462+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:19:37.482+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.032 seconds
+[2025-04-22T07:20:08.429+0000] {processor.py:186} INFO - Started process (PID=208) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:20:08.430+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:20:08.436+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:20:08.436+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:20:08.441+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:20:08.441+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:20:08.442+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:20:08.460+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.034 seconds
+[2025-04-22T07:20:38.931+0000] {processor.py:186} INFO - Started process (PID=278) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:20:38.935+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:20:38.937+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:20:38.937+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:20:38.947+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:20:38.946+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:20:38.948+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:20:38.980+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.053 seconds
+[2025-04-22T07:21:09.130+0000] {processor.py:186} INFO - Started process (PID=348) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:21:09.131+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:21:09.133+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:21:09.133+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:21:09.138+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:21:09.137+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:21:09.138+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:21:09.156+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.030 seconds
+[2025-04-22T07:21:39.847+0000] {processor.py:186} INFO - Started process (PID=418) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:21:39.847+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:21:39.849+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:21:39.849+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:21:39.852+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:21:39.851+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:21:39.852+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:21:39.870+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.028 seconds
+[2025-04-22T07:22:10.206+0000] {processor.py:186} INFO - Started process (PID=488) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:22:10.206+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:22:10.209+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:22:10.208+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:22:10.211+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:22:10.211+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:22:10.212+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:22:10.228+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.027 seconds
+[2025-04-22T07:22:40.642+0000] {processor.py:186} INFO - Started process (PID=558) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:22:40.643+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:22:40.645+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:22:40.645+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:22:40.652+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:22:40.651+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:22:40.652+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:22:40.669+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.032 seconds
+[2025-04-22T07:23:11.338+0000] {processor.py:186} INFO - Started process (PID=628) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:23:11.339+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:23:11.341+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:23:11.341+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:23:11.347+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:23:11.346+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:23:11.347+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:23:11.363+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.030 seconds
+[2025-04-22T07:23:41.587+0000] {processor.py:186} INFO - Started process (PID=698) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:23:41.588+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:23:41.591+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:23:41.590+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:23:41.596+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:23:41.595+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:23:41.596+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:23:41.614+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.032 seconds
+[2025-04-22T07:24:12.445+0000] {processor.py:186} INFO - Started process (PID=773) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:24:12.446+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:24:12.448+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:24:12.447+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:24:12.451+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:24:12.451+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:24:12.452+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:24:12.470+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.029 seconds
+[2025-04-22T07:24:43.203+0000] {processor.py:186} INFO - Started process (PID=843) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:24:43.203+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:24:43.206+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:24:43.206+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:24:43.210+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:24:43.209+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:24:43.212+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:24:43.229+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.031 seconds
+[2025-04-22T07:25:13.938+0000] {processor.py:186} INFO - Started process (PID=913) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:25:13.939+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:25:13.941+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:25:13.941+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:25:13.945+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:25:13.944+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:25:13.945+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:25:13.965+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.031 seconds
+[2025-04-22T07:25:44.636+0000] {processor.py:186} INFO - Started process (PID=984) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:25:44.637+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:25:44.640+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:25:44.639+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:25:44.643+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:25:44.642+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:25:44.643+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:25:44.660+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.027 seconds
+[2025-04-22T07:26:15.096+0000] {processor.py:186} INFO - Started process (PID=1054) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:26:15.097+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:26:15.100+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:26:15.100+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:26:15.103+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:26:15.102+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:26:15.103+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:26:15.123+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.031 seconds
+[2025-04-22T07:26:45.511+0000] {processor.py:186} INFO - Started process (PID=1124) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:26:45.511+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:26:45.514+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:26:45.514+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:26:45.519+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:26:45.519+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:26:45.520+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:26:45.538+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.032 seconds
+[2025-04-22T07:27:16.276+0000] {processor.py:186} INFO - Started process (PID=1193) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:27:16.277+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:27:16.281+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:27:16.280+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:27:16.287+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:27:16.286+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:27:16.287+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:27:16.306+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.035 seconds
+[2025-04-22T07:27:46.525+0000] {processor.py:186} INFO - Started process (PID=1263) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:27:46.526+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:27:46.529+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:27:46.528+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:27:46.532+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:27:46.531+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:27:46.533+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:27:46.552+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.031 seconds
+[2025-04-22T07:28:16.850+0000] {processor.py:186} INFO - Started process (PID=1333) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:28:16.851+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:28:16.854+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:28:16.853+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:28:16.857+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:28:16.856+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:28:16.857+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:28:16.873+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.027 seconds
+[2025-04-22T07:28:47.371+0000] {processor.py:186} INFO - Started process (PID=1403) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:28:47.372+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:28:47.374+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:28:47.374+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:28:47.377+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:28:47.376+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:28:47.379+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:28:47.395+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.028 seconds
+[2025-04-22T07:29:17.812+0000] {processor.py:186} INFO - Started process (PID=1474) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:29:17.813+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:29:17.816+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:29:17.815+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:29:17.818+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:29:17.818+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:29:17.819+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:29:17.836+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.028 seconds
+[2025-04-22T07:29:48.175+0000] {processor.py:186} INFO - Started process (PID=1544) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:29:48.176+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:29:48.178+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:29:48.178+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:29:48.181+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:29:48.181+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:29:48.183+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:29:48.198+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.028 seconds
+[2025-04-22T07:30:18.628+0000] {processor.py:186} INFO - Started process (PID=1614) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:30:18.628+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:30:18.630+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:30:18.630+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:30:18.633+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:30:18.633+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:30:18.634+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:30:18.652+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.028 seconds
+[2025-04-22T07:30:48.839+0000] {processor.py:186} INFO - Started process (PID=1684) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:30:48.840+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:30:48.841+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:30:48.841+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:30:48.845+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:30:48.844+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:30:48.846+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:30:48.864+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.029 seconds
+[2025-04-22T07:31:19.259+0000] {processor.py:186} INFO - Started process (PID=1754) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:31:19.259+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:31:19.261+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:31:19.261+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:31:19.267+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:31:19.264+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:31:19.267+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:31:19.285+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.030 seconds
+[2025-04-22T07:31:49.692+0000] {processor.py:186} INFO - Started process (PID=1824) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:31:49.693+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:31:49.695+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:31:49.694+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:31:49.698+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:31:49.698+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:31:49.699+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:31:49.718+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.030 seconds
+[2025-04-22T07:32:19.868+0000] {processor.py:186} INFO - Started process (PID=1894) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:32:19.869+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:32:19.871+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:32:19.871+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:32:19.874+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:32:19.873+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:32:19.874+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:32:19.894+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.031 seconds
+[2025-04-22T07:32:50.114+0000] {processor.py:186} INFO - Started process (PID=1964) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:32:50.115+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:32:50.117+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:32:50.117+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:32:50.122+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:32:50.121+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:32:50.122+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:32:50.143+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.034 seconds
+[2025-04-22T07:33:20.428+0000] {processor.py:186} INFO - Started process (PID=2034) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:33:20.429+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:33:20.431+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:33:20.431+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:33:20.435+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:33:20.434+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:33:20.435+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:33:20.456+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.033 seconds
+[2025-04-22T07:33:50.712+0000] {processor.py:186} INFO - Started process (PID=2104) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:33:50.713+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:33:50.715+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:33:50.714+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:33:50.718+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:33:50.718+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:33:50.719+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:33:50.734+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.027 seconds
+[2025-04-22T07:34:21.226+0000] {processor.py:186} INFO - Started process (PID=2174) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:34:21.227+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:34:21.229+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:34:21.229+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:34:21.233+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:34:21.232+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:34:21.235+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:34:21.255+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.034 seconds
+[2025-04-22T07:34:51.584+0000] {processor.py:186} INFO - Started process (PID=2244) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:34:51.585+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:34:51.586+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:34:51.586+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:34:51.590+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:34:51.590+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:34:51.591+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:34:51.610+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.030 seconds
+[2025-04-22T07:35:22.014+0000] {processor.py:186} INFO - Started process (PID=2314) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:35:22.014+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:35:22.017+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:35:22.017+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:35:22.021+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:35:22.020+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:35:22.022+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:35:22.039+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.031 seconds
+[2025-04-22T07:35:52.107+0000] {processor.py:186} INFO - Started process (PID=2384) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:35:52.108+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:35:52.110+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:35:52.110+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:35:52.113+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:35:52.112+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:35:52.113+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:35:52.131+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.027 seconds
+[2025-04-22T07:36:22.769+0000] {processor.py:186} INFO - Started process (PID=2454) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:36:22.770+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:36:22.774+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:36:22.774+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:36:22.778+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:36:22.777+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:36:22.778+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:36:22.802+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.038 seconds
+[2025-04-22T07:36:52.931+0000] {processor.py:186} INFO - Started process (PID=2524) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:36:52.932+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:36:52.934+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:36:52.934+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:36:52.938+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:36:52.937+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:36:52.938+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:36:52.958+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.030 seconds
+[2025-04-22T07:37:23.492+0000] {processor.py:186} INFO - Started process (PID=2594) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:37:23.493+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:37:23.495+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:37:23.495+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:37:23.502+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:37:23.502+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:37:23.503+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:37:23.526+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.039 seconds
+[2025-04-22T07:37:53.788+0000] {processor.py:186} INFO - Started process (PID=2664) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:37:53.789+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:37:53.792+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:37:53.791+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:37:53.795+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:37:53.794+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:37:53.795+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:37:53.811+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.028 seconds
+[2025-04-22T07:38:24.192+0000] {processor.py:186} INFO - Started process (PID=2734) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:38:24.192+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:38:24.194+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:38:24.194+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:38:24.198+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:38:24.197+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:38:24.198+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:38:24.215+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.028 seconds
+[2025-04-22T07:38:54.682+0000] {processor.py:186} INFO - Started process (PID=2804) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:38:54.683+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:38:54.685+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:38:54.685+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:38:54.689+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:38:54.688+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:38:54.689+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:38:54.710+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.032 seconds
+[2025-04-22T07:39:25.259+0000] {processor.py:186} INFO - Started process (PID=2874) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:39:25.260+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:39:25.262+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:39:25.262+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:39:25.265+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:39:25.264+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:39:25.266+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:39:25.282+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.027 seconds
+[2025-04-22T07:39:55.742+0000] {processor.py:186} INFO - Started process (PID=2944) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:39:55.742+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:39:55.744+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:39:55.744+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:39:55.747+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:39:55.746+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:39:55.748+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:39:55.766+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.029 seconds
+[2025-04-22T07:40:26.105+0000] {processor.py:186} INFO - Started process (PID=3014) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:40:26.106+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:40:26.108+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:40:26.108+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:40:26.112+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:40:26.111+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:40:26.112+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:40:26.130+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.029 seconds
+[2025-04-22T07:40:56.743+0000] {processor.py:186} INFO - Started process (PID=3084) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:40:56.743+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:40:56.745+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:40:56.745+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:40:56.749+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:40:56.749+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:40:56.750+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:40:56.765+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.026 seconds
+[2025-04-22T07:41:26.943+0000] {processor.py:186} INFO - Started process (PID=3154) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:41:26.943+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:41:26.945+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:41:26.945+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:41:26.948+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:41:26.948+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:41:26.949+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:41:26.967+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.028 seconds
+[2025-04-22T07:41:57.460+0000] {processor.py:186} INFO - Started process (PID=3224) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:41:57.461+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:41:57.463+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:41:57.463+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:41:57.466+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:41:57.466+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:41:57.467+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:41:57.483+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.027 seconds
+[2025-04-22T07:42:28.224+0000] {processor.py:186} INFO - Started process (PID=3292) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:42:28.225+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:42:28.227+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:42:28.226+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:42:28.230+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:42:28.229+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:42:28.230+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:42:28.246+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.027 seconds
+[2025-04-22T07:42:58.331+0000] {processor.py:186} INFO - Started process (PID=3354) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:42:58.332+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:42:58.334+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:42:58.334+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:42:58.337+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:42:58.336+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:42:58.337+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:42:58.354+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.027 seconds
+[2025-04-22T07:43:28.459+0000] {processor.py:186} INFO - Started process (PID=3422) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:43:28.460+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:43:28.462+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:43:28.461+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:43:28.472+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:43:28.471+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:43:28.473+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:43:28.491+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.037 seconds
+[2025-04-22T07:43:58.577+0000] {processor.py:186} INFO - Started process (PID=3490) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:43:58.578+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:43:58.579+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:43:58.579+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:43:58.583+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:43:58.581+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:43:58.583+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:43:58.602+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.029 seconds
+[2025-04-22T07:44:28.770+0000] {processor.py:186} INFO - Started process (PID=3560) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:44:28.770+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:44:28.773+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:44:28.773+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:44:28.776+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:44:28.775+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:44:28.777+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:44:28.793+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.028 seconds
+[2025-04-22T07:44:59.321+0000] {processor.py:186} INFO - Started process (PID=3630) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:44:59.322+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:44:59.324+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:44:59.324+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:44:59.327+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:44:59.326+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:44:59.327+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:44:59.343+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.026 seconds
+[2025-04-22T07:45:29.686+0000] {processor.py:186} INFO - Started process (PID=3700) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:45:29.686+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:45:29.688+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:45:29.688+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:45:29.691+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:45:29.691+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:45:29.692+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:45:29.707+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.026 seconds
+[2025-04-22T07:45:59.953+0000] {processor.py:186} INFO - Started process (PID=3770) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:45:59.954+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:45:59.956+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:45:59.956+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:45:59.959+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:45:59.959+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:45:59.960+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:45:59.977+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.028 seconds
+[2025-04-22T07:46:30.078+0000] {processor.py:186} INFO - Started process (PID=3840) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:46:30.078+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:46:30.081+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:46:30.080+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:46:30.084+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:46:30.083+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:46:30.085+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:46:30.101+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.027 seconds
+[2025-04-22T07:47:00.297+0000] {processor.py:186} INFO - Started process (PID=3910) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:47:00.298+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:47:00.300+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:47:00.300+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:47:00.304+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:47:00.303+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:47:00.304+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:47:00.320+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.026 seconds
+[2025-04-22T07:47:30.800+0000] {processor.py:186} INFO - Started process (PID=3980) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:47:30.800+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:47:30.803+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:47:30.802+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:47:30.806+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:47:30.805+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:47:30.806+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:47:30.821+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.026 seconds
+[2025-04-22T07:48:00.926+0000] {processor.py:186} INFO - Started process (PID=4050) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:48:00.927+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:48:00.930+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:48:00.930+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:48:00.934+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:48:00.933+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:48:00.934+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:48:00.950+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.028 seconds
+[2025-04-22T07:48:31.005+0000] {processor.py:186} INFO - Started process (PID=4120) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:48:31.005+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:48:31.008+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:48:31.007+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:48:31.011+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:48:31.010+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:48:31.011+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:48:31.026+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.025 seconds
+[2025-04-22T07:49:01.143+0000] {processor.py:186} INFO - Started process (PID=4190) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:49:01.143+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:49:01.146+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:49:01.145+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:49:01.148+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:49:01.148+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/compress_and_email.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/compress_and_email.py", line 9
+    
+    ^
+IndentationError: expected an indented block after 'with' statement on line 5
+[2025-04-22T07:49:01.149+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:49:01.164+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.026 seconds
+[2025-04-22T07:49:29.806+0000] {processor.py:186} INFO - Started process (PID=4260) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:49:29.807+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:49:29.809+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:49:29.809+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:49:29.820+0000] {processor.py:925} INFO - DAG(s) 'minio_file_compression_and_email' retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:49:29.900+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:49:29.899+0000] {override.py:1912} INFO - Created Permission View: can delete on DAG:minio_file_compression_and_email
+[2025-04-22T07:49:29.909+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:49:29.908+0000] {override.py:1912} INFO - Created Permission View: can read on DAG:minio_file_compression_and_email
+[2025-04-22T07:49:29.915+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:49:29.915+0000] {override.py:1912} INFO - Created Permission View: can edit on DAG:minio_file_compression_and_email
+[2025-04-22T07:49:29.923+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:49:29.923+0000] {override.py:1912} INFO - Created Permission View: can create on DAG Run:minio_file_compression_and_email
+[2025-04-22T07:49:29.929+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:49:29.929+0000] {override.py:1912} INFO - Created Permission View: can delete on DAG Run:minio_file_compression_and_email
+[2025-04-22T07:49:29.936+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:49:29.935+0000] {override.py:1912} INFO - Created Permission View: can read on DAG Run:minio_file_compression_and_email
+[2025-04-22T07:49:29.941+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:49:29.941+0000] {override.py:1912} INFO - Created Permission View: menu access on DAG Run:minio_file_compression_and_email
+[2025-04-22T07:49:29.941+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:49:29.941+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T07:49:29.951+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:49:29.950+0000] {dag.py:3262} INFO - Creating ORM DAG for minio_file_compression_and_email
+[2025-04-22T07:49:29.957+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:49:29.957+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_file_compression_and_email to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T07:49:29.972+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.170 seconds
+[2025-04-22T07:50:00.442+0000] {processor.py:186} INFO - Started process (PID=4330) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:50:00.443+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:50:00.446+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:50:00.445+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:50:00.458+0000] {processor.py:925} INFO - DAG(s) 'minio_file_compression_and_email' retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:50:00.476+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:50:00.476+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T07:50:00.497+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:50:00.497+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_file_compression_and_email to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T07:50:00.512+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.075 seconds
+[2025-04-22T07:50:10.248+0000] {processor.py:186} INFO - Started process (PID=4346) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:50:10.249+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:50:10.251+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:50:10.251+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:50:10.264+0000] {processor.py:925} INFO - DAG(s) 'minio_file_compression_and_email' retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:50:10.352+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:50:10.352+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T07:50:10.369+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:50:10.368+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_file_compression_and_email to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T07:50:10.387+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.144 seconds
+[2025-04-22T07:50:40.429+0000] {processor.py:186} INFO - Started process (PID=4417) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:50:40.430+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:50:40.432+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:50:40.432+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:50:40.443+0000] {processor.py:925} INFO - DAG(s) 'minio_file_compression_and_email' retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:50:40.462+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:50:40.461+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T07:50:40.483+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:50:40.483+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_file_compression_and_email to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T07:50:40.500+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.075 seconds
+[2025-04-22T07:50:49.232+0000] {processor.py:186} INFO - Started process (PID=4471) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:50:49.233+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:50:49.235+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:50:49.235+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:50:49.245+0000] {processor.py:925} INFO - DAG(s) 'minio_file_compression_and_email' retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:50:49.325+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:50:49.325+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T07:50:49.339+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:50:49.339+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_file_compression_and_email to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T07:50:49.354+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.127 seconds
+[2025-04-22T07:51:20.005+0000] {processor.py:186} INFO - Started process (PID=4541) to work on /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:51:20.006+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/compress_and_email.py for tasks to queue
+[2025-04-22T07:51:20.008+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:51:20.008+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:51:20.017+0000] {processor.py:925} INFO - DAG(s) 'minio_file_compression_and_email' retrieved from /opt/airflow/dags/compress_and_email.py
+[2025-04-22T07:51:20.032+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:51:20.032+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T07:51:20.049+0000] {logging_mixin.py:190} INFO - [2025-04-22T07:51:20.049+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_file_compression_and_email to 2025-04-22 00:00:00+00:00, run_after=2025-04-22 00:00:00+00:00
+[2025-04-22T07:51:20.064+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/compress_and_email.py took 0.062 seconds

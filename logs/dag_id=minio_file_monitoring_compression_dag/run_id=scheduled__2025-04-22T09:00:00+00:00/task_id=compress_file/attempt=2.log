@@ -1,0 +1,162 @@
+[2025-04-22T09:18:15.975+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-22T09:18:16.019+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: minio_file_monitoring_compression_dag.compress_file scheduled__2025-04-22T09:00:00+00:00 [queued]>
+[2025-04-22T09:18:16.052+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: minio_file_monitoring_compression_dag.compress_file scheduled__2025-04-22T09:00:00+00:00 [queued]>
+[2025-04-22T09:18:16.054+0000] {taskinstance.py:2867} INFO - Starting attempt 2 of 2
+[2025-04-22T09:18:16.310+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): compress_file> on 2025-04-22 09:00:00+00:00
+[2025-04-22T09:18:16.321+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=239) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-04-22T09:18:16.324+0000] {standard_task_runner.py:72} INFO - Started process 241 to run task
+[2025-04-22T09:18:16.327+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'minio_file_monitoring_compression_dag', 'compress_file', 'scheduled__2025-04-22T09:00:00+00:00', '--job-id', '80', '--raw', '--subdir', 'DAGS_FOLDER/minio_file_compression_and_email.py', '--cfg-path', '/tmp/tmpiaq70zu4']
+[2025-04-22T09:18:16.330+0000] {standard_task_runner.py:105} INFO - Job 80: Subtask compress_file
+[2025-04-22T09:18:16.433+0000] {task_command.py:467} INFO - Running <TaskInstance: minio_file_monitoring_compression_dag.compress_file scheduled__2025-04-22T09:00:00+00:00 [running]> on host 218dff27a00b
+[2025-04-22T09:18:16.621+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='krishtaltiwari@gmail.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='minio_file_monitoring_compression_dag' AIRFLOW_CTX_TASK_ID='compress_file' AIRFLOW_CTX_EXECUTION_DATE='2025-04-22T09:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-04-22T09:00:00+00:00'
+[2025-04-22T09:18:16.624+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-22T09:18:16.626+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-22T09:18:16.627+0000] {logging_mixin.py:190} INFO - Current task name:compress_file state:running start_date:2025-04-22 09:18:16.020164+00:00
+[2025-04-22T09:18:16.628+0000] {logging_mixin.py:190} INFO - Dag name:minio_file_monitoring_compression_dag and current dag run status:running
+[2025-04-22T09:18:16.629+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-22T09:18:16.698+0000] {base.py:84} INFO - Retrieving connection 'minio_s3'
+[2025-04-22T09:18:16.701+0000] {minio_file_compression_and_email.py:49} INFO - Retrieved MinIO credentials from Airflow connection 'minio_s3'
+[2025-04-22T09:18:17.151+0000] {minio_file_compression_and_email.py:66} INFO - Successfully created MinIO client with endpoint http://minio:9000
+[2025-04-22T09:18:17.152+0000] {minio_file_compression_and_email.py:120} INFO - Downloading file uploads/test1.txt from bucket my-bucket
+[2025-04-22T09:18:17.202+0000] {minio_file_compression_and_email.py:182} ERROR - Error processing file uploads/test1.txt: An error occurred (404) when calling the HeadObject operation: Not Found
+[2025-04-22T09:18:17.204+0000] {taskinstance.py:3313} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/minio_file_compression_and_email.py", line 121, in compress_file
+    s3_client.download_file(
+  File "/home/airflow/.local/lib/python3.12/site-packages/boto3/s3/inject.py", line 192, in download_file
+    return transfer.download_file(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/boto3/s3/transfer.py", line 406, in download_file
+    future.result()
+  File "/home/airflow/.local/lib/python3.12/site-packages/s3transfer/futures.py", line 103, in result
+    return self._coordinator.result()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/s3transfer/futures.py", line 264, in result
+    raise self._exception
+  File "/home/airflow/.local/lib/python3.12/site-packages/s3transfer/tasks.py", line 265, in _main
+    self._submit(transfer_future=transfer_future, **kwargs)
+  File "/home/airflow/.local/lib/python3.12/site-packages/s3transfer/download.py", line 352, in _submit
+    response = client.head_object(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/client.py", line 569, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/client.py", line 1023, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (404) when calling the HeadObject operation: Not Found
+[2025-04-22T09:18:17.224+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-04-22T09:18:17.225+0000] {logging_mixin.py:190} INFO - Task start:2025-04-22 09:18:16.020164+00:00 end:2025-04-22 09:18:17.223552+00:00 duration:1.203388
+[2025-04-22T09:18:17.225+0000] {logging_mixin.py:190} INFO - Task:<Task(PythonOperator): compress_file> dag:<DAG: minio_file_monitoring_compression_dag> dagrun:<DagRun minio_file_monitoring_compression_dag @ 2025-04-22 09:00:00+00:00: scheduled__2025-04-22T09:00:00+00:00, state:running, queued_at: 2025-04-22 09:01:50.040638+00:00. externally triggered: False>
+[2025-04-22T09:18:17.226+0000] {logging_mixin.py:190} INFO - Failure caused by An error occurred (404) when calling the HeadObject operation: Not Found
+[2025-04-22T09:18:17.226+0000] {taskinstance.py:1226} INFO - Marking task as FAILED. dag_id=minio_file_monitoring_compression_dag, task_id=compress_file, run_id=scheduled__2025-04-22T09:00:00+00:00, execution_date=20250422T090000, start_date=20250422T091816, end_date=20250422T091817
+[2025-04-22T09:18:17.250+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/utils/email.py:155: RemovedInAirflow3Warning: Fetching SMTP credentials from configuration variables will be deprecated in a future release. Please set credentials using a connection instead.
+  send_mime_email(e_from=mail_from, e_to=recipients, mime_msg=msg, conn_id=conn_id, dryrun=dryrun)
+
+[2025-04-22T09:18:17.251+0000] {email.py:272} INFO - Email alerting: attempt 1
+[2025-04-22T09:18:19.212+0000] {email.py:283} INFO - Sent an alert email to ['krishtaltiwari@gmail.com']
+[2025-04-22T09:18:21.219+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-22T09:18:21.222+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 80 for task compress_file (An error occurred (404) when calling the HeadObject operation: Not Found; 241)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3006, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 274, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3161, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3185, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/minio_file_compression_and_email.py", line 121, in compress_file
+    s3_client.download_file(
+  File "/home/airflow/.local/lib/python3.12/site-packages/boto3/s3/inject.py", line 192, in download_file
+    return transfer.download_file(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/boto3/s3/transfer.py", line 406, in download_file
+    future.result()
+  File "/home/airflow/.local/lib/python3.12/site-packages/s3transfer/futures.py", line 103, in result
+    return self._coordinator.result()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/s3transfer/futures.py", line 264, in result
+    raise self._exception
+  File "/home/airflow/.local/lib/python3.12/site-packages/s3transfer/tasks.py", line 265, in _main
+    self._submit(transfer_future=transfer_future, **kwargs)
+  File "/home/airflow/.local/lib/python3.12/site-packages/s3transfer/download.py", line 352, in _submit
+    response = client.head_object(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/client.py", line 569, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/client.py", line 1023, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (404) when calling the HeadObject operation: Not Found
+[2025-04-22T09:18:21.320+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2025-04-22T09:18:21.329+0000] {standard_task_runner.py:217} INFO - Process not found (most likely exited), stop collecting metrics
+[2025-04-22T09:18:21.379+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-22T09:18:21.388+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

@@ -1,0 +1,282 @@
+[2025-04-22T11:18:52.021+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-22T11:18:52.041+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: compress_file_on_upload.wait_for_file scheduled__2025-04-22T11:17:00+00:00 [queued]>
+[2025-04-22T11:18:52.054+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: compress_file_on_upload.wait_for_file scheduled__2025-04-22T11:17:00+00:00 [queued]>
+[2025-04-22T11:18:52.054+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-04-22T11:18:52.260+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonSensor): wait_for_file> on 2025-04-22 11:17:00+00:00
+[2025-04-22T11:18:52.270+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=1189) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-04-22T11:18:52.272+0000] {standard_task_runner.py:72} INFO - Started process 1193 to run task
+[2025-04-22T11:18:52.272+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'compress_file_on_upload', 'wait_for_file', 'scheduled__2025-04-22T11:17:00+00:00', '--job-id', '251', '--raw', '--subdir', 'DAGS_FOLDER/minio_file_compression_and_email.py', '--cfg-path', '/tmp/tmp8uwnfti0']
+[2025-04-22T11:18:52.273+0000] {standard_task_runner.py:105} INFO - Job 251: Subtask wait_for_file
+[2025-04-22T11:18:52.332+0000] {task_command.py:467} INFO - Running <TaskInstance: compress_file_on_upload.wait_for_file scheduled__2025-04-22T11:17:00+00:00 [running]> on host 218dff27a00b
+[2025-04-22T11:18:52.451+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='compress_file_on_upload' AIRFLOW_CTX_TASK_ID='wait_for_file' AIRFLOW_CTX_EXECUTION_DATE='2025-04-22T11:17:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-04-22T11:17:00+00:00'
+[2025-04-22T11:18:52.453+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-22T11:18:52.454+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-22T11:18:52.454+0000] {logging_mixin.py:190} INFO - Current task name:wait_for_file state:running start_date:2025-04-22 11:18:52.041976+00:00
+[2025-04-22T11:18:52.455+0000] {logging_mixin.py:190} INFO - Dag name:compress_file_on_upload and current dag run status:running
+[2025-04-22T11:18:52.455+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-22T11:18:52.467+0000] {python.py:75} INFO - Poking callable: <function check_for_files at 0x7fc60c122480>
+[2025-04-22T11:18:52.749+0000] {minio_file_compression_and_email.py:44} INFO - Listing objects in bucket: my-bucket, prefix: uploads/
+[2025-04-22T11:18:52.769+0000] {minio_file_compression_and_email.py:46} INFO - Raw response from MinIO: {'ResponseMetadata': {'RequestId': '18389FF5976C7011', 'HostId': 'dd9025bab4ad464b049177c95eb6ebf374d3b3fd1af9251148b658df7ac2e3e8', 'HTTPStatusCode': 200, 'HTTPHeaders': {'accept-ranges': 'bytes', 'content-length': '280', 'content-type': 'application/xml', 'server': 'MinIO', 'strict-transport-security': 'max-age=31536000; includeSubDomains', 'vary': 'Origin, Accept-Encoding', 'x-amz-id-2': 'dd9025bab4ad464b049177c95eb6ebf374d3b3fd1af9251148b658df7ac2e3e8', 'x-amz-request-id': '18389FF5976C7011', 'x-content-type-options': 'nosniff', 'x-ratelimit-limit': '856', 'x-ratelimit-remaining': '856', 'x-xss-protection': '1; mode=block', 'date': 'Tue, 22 Apr 2025 11:18:52 GMT'}, 'RetryAttempts': 0}, 'IsTruncated': False, 'Name': 'my-bucket', 'Prefix': 'uploads/', 'MaxKeys': 1000, 'EncodingType': 'url', 'KeyCount': 0}
+[2025-04-22T11:18:52.770+0000] {minio_file_compression_and_email.py:49} INFO - No 'Contents' key in response. Bucket might be empty or prefix incorrect.
+[2025-04-22T11:18:52.801+0000] {taskinstance.py:310} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2025-04-22T11:18:52.802+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-22T11:18:52.864+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-22T11:18:52.915+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-22T11:18:52.918+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2025-04-22T11:19:27.671+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-22T11:19:27.698+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: compress_file_on_upload.wait_for_file scheduled__2025-04-22T11:17:00+00:00 [queued]>
+[2025-04-22T11:19:27.709+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: compress_file_on_upload.wait_for_file scheduled__2025-04-22T11:17:00+00:00 [queued]>
+[2025-04-22T11:19:27.711+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-04-22T11:19:27.931+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonSensor): wait_for_file> on 2025-04-22 11:17:00+00:00
+[2025-04-22T11:19:27.945+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=1201) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-04-22T11:19:27.947+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'compress_file_on_upload', 'wait_for_file', 'scheduled__2025-04-22T11:17:00+00:00', '--job-id', '255', '--raw', '--subdir', 'DAGS_FOLDER/minio_file_compression_and_email.py', '--cfg-path', '/tmp/tmpxuv_sq90']
+[2025-04-22T11:19:27.948+0000] {standard_task_runner.py:72} INFO - Started process 1216 to run task
+[2025-04-22T11:19:27.948+0000] {standard_task_runner.py:105} INFO - Job 255: Subtask wait_for_file
+[2025-04-22T11:19:28.009+0000] {task_command.py:467} INFO - Running <TaskInstance: compress_file_on_upload.wait_for_file scheduled__2025-04-22T11:17:00+00:00 [running]> on host 218dff27a00b
+[2025-04-22T11:19:28.103+0000] {taskinstance.py:3313} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 274, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3125, in _execute_task_with_callbacks
+    _update_rtif(ti=self, rendered_fields=rendered_fields)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/api_internal/internal_api_call.py", line 166, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 1642, in _update_rtif
+    RenderedTaskInstanceFields.write(rtif, session=session)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 94, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/retries.py", line 93, in wrapped_function
+    for attempt in run_with_db_retries(max_retries=retries, logger=logger, **retry_kwargs):
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 443, in __iter__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 376, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 398, in <lambda>
+    self._add_action_func(lambda rs: rs.outcome.result())
+                                     ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/retries.py", line 102, in wrapped_function
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/renderedtifields.py", line 229, in write
+    session.merge(self)
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 3056, in merge
+    return self._merge(
+           ^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 3136, in _merge
+    merged = self.get(
+             ^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 2853, in get
+    return self._get_impl(
+           ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 2975, in _get_impl
+    return db_load_fn(
+           ^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/loading.py", line 530, in load_on_pk_identity
+    session.execute(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 1717, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1710, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/sql/elements.py", line 334, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1569, in _execute_clauseelement
+    compiled_sql, extracted_params, cache_hit = elem._compile_w_cache(
+                                                ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/sql/elements.py", line 532, in _compile_w_cache
+    compiled_sql = self._compiler(
+                   ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/sql/elements.py", line 567, in _compiler
+    return dialect.statement_compiler(dialect, self, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/sql/compiler.py", line 809, in __init__
+    Compiled.__init__(self, dialect, statement, **kwargs)
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/sql/compiler.py", line 464, in __init__
+    self.string = self.process(self.statement, **compile_kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/sql/compiler.py", line 499, in process
+    return obj._compiler_dispatch(self, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/sql/visitors.py", line 82, in _compiler_dispatch
+    return meth(self, **kw)
+           ^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/sql/compiler.py", line 3403, in visit_select
+    compile_state = select_stmt._compile_state_factory(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/sql/base.py", line 510, in create_for_statement
+    return klass.create_for_statement(statement, compiler, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/context.py", line 765, in create_for_statement
+    self._setup_for_generate()
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/context.py", line 875, in _setup_for_generate
+    entity.setup_compile_state(self)
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/context.py", line 2661, in setup_compile_state
+    loading._setup_entity_query(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/loading.py", line 612, in _setup_entity_query
+    value.setup(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/interfaces.py", line 645, in setup
+    strat = self.strategy
+            ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/langhelpers.py", line 1244, in __getattr__
+    return self._fallback_getattr(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/langhelpers.py", line 1218, in _fallback_getattr
+    raise AttributeError(key)
+AttributeError: strategy
+[2025-04-22T11:19:28.130+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-04-22T11:19:28.131+0000] {logging_mixin.py:190} INFO - Task start:2025-04-22 11:19:27.699228+00:00 end:2025-04-22 11:19:28.129916+00:00 duration:0.430688
+[2025-04-22T11:19:28.133+0000] {logging_mixin.py:190} INFO - Task:<Task(PythonSensor): wait_for_file> dag:<DAG: compress_file_on_upload> dagrun:<DagRun compress_file_on_upload @ 2025-04-22 11:17:00+00:00: scheduled__2025-04-22T11:17:00+00:00, state:running, queued_at: 2025-04-22 11:18:48.886225+00:00. externally triggered: False>
+[2025-04-22T11:19:28.133+0000] {logging_mixin.py:190} INFO - Failure caused by strategy
+[2025-04-22T11:19:28.134+0000] {taskinstance.py:1226} INFO - Marking task as UP_FOR_RETRY. dag_id=compress_file_on_upload, task_id=wait_for_file, run_id=scheduled__2025-04-22T11:17:00+00:00, execution_date=20250422T111700, start_date=20250422T111927, end_date=20250422T111928
+[2025-04-22T11:19:28.174+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-22T11:19:28.175+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 255 for task wait_for_file (strategy; 1216)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3006, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 274, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3125, in _execute_task_with_callbacks
+    _update_rtif(ti=self, rendered_fields=rendered_fields)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/api_internal/internal_api_call.py", line 166, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 1642, in _update_rtif
+    RenderedTaskInstanceFields.write(rtif, session=session)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 94, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/retries.py", line 93, in wrapped_function
+    for attempt in run_with_db_retries(max_retries=retries, logger=logger, **retry_kwargs):
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 443, in __iter__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 376, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 398, in <lambda>
+    self._add_action_func(lambda rs: rs.outcome.result())
+                                     ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/retries.py", line 102, in wrapped_function
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/renderedtifields.py", line 229, in write
+    session.merge(self)
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 3056, in merge
+    return self._merge(
+           ^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 3136, in _merge
+    merged = self.get(
+             ^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 2853, in get
+    return self._get_impl(
+           ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 2975, in _get_impl
+    return db_load_fn(
+           ^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/loading.py", line 530, in load_on_pk_identity
+    session.execute(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 1717, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1710, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/sql/elements.py", line 334, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1569, in _execute_clauseelement
+    compiled_sql, extracted_params, cache_hit = elem._compile_w_cache(
+                                                ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/sql/elements.py", line 532, in _compile_w_cache
+    compiled_sql = self._compiler(
+                   ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/sql/elements.py", line 567, in _compiler
+    return dialect.statement_compiler(dialect, self, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/sql/compiler.py", line 809, in __init__
+    Compiled.__init__(self, dialect, statement, **kwargs)
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/sql/compiler.py", line 464, in __init__
+    self.string = self.process(self.statement, **compile_kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/sql/compiler.py", line 499, in process
+    return obj._compiler_dispatch(self, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/sql/visitors.py", line 82, in _compiler_dispatch
+    return meth(self, **kw)
+           ^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/sql/compiler.py", line 3403, in visit_select
+    compile_state = select_stmt._compile_state_factory(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/sql/base.py", line 510, in create_for_statement
+    return klass.create_for_statement(statement, compiler, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/context.py", line 765, in create_for_statement
+    self._setup_for_generate()
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/context.py", line 875, in _setup_for_generate
+    entity.setup_compile_state(self)
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/context.py", line 2661, in setup_compile_state
+    loading._setup_entity_query(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/loading.py", line 612, in _setup_entity_query
+    value.setup(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/interfaces.py", line 645, in setup
+    strat = self.strategy
+            ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/langhelpers.py", line 1244, in __getattr__
+    return self._fallback_getattr(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/langhelpers.py", line 1218, in _fallback_getattr
+    raise AttributeError(key)
+AttributeError: strategy
+[2025-04-22T11:19:28.213+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2025-04-22T11:19:28.244+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-22T11:19:28.247+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

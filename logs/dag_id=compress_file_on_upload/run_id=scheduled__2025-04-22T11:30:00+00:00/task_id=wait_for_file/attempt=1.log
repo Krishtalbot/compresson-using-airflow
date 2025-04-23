@@ -1,0 +1,25 @@
+[2025-04-22T11:35:58.860+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-22T11:35:58.952+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: compress_file_on_upload.wait_for_file scheduled__2025-04-22T11:30:00+00:00 [queued]>
+[2025-04-22T11:35:58.978+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: compress_file_on_upload.wait_for_file scheduled__2025-04-22T11:30:00+00:00 [queued]>
+[2025-04-22T11:35:58.979+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-04-22T11:35:59.394+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonSensor): wait_for_file> on 2025-04-22 11:30:00+00:00
+[2025-04-22T11:35:59.425+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'compress_file_on_upload', 'wait_for_file', 'scheduled__2025-04-22T11:30:00+00:00', '--job-id', '402', '--raw', '--subdir', 'DAGS_FOLDER/minio_file_compression_and_email.py', '--cfg-path', '/tmp/tmpk_cofuov']
+[2025-04-22T11:35:59.428+0000] {standard_task_runner.py:105} INFO - Job 402: Subtask wait_for_file
+[2025-04-22T11:35:59.450+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=1890) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-04-22T11:35:59.455+0000] {standard_task_runner.py:72} INFO - Started process 1910 to run task
+[2025-04-22T11:36:30.639+0000] {task_command.py:467} INFO - Running <TaskInstance: compress_file_on_upload.wait_for_file scheduled__2025-04-22T11:30:00+00:00 [running]> on host 218dff27a00b
+[2025-04-22T11:36:31.471+0000] {job.py:229} INFO - Heartbeat recovered after 33.40 seconds
+[2025-04-22T11:38:43.906+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='compress_file_on_upload' AIRFLOW_CTX_TASK_ID='wait_for_file' AIRFLOW_CTX_EXECUTION_DATE='2025-04-22T11:30:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-04-22T11:30:00+00:00'
+[2025-04-22T11:38:43.912+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-22T11:38:43.912+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-22T11:38:43.915+0000] {logging_mixin.py:190} INFO - Current task name:wait_for_file state:running start_date:2025-04-22 11:35:58.954153+00:00
+[2025-04-22T11:38:43.917+0000] {logging_mixin.py:190} INFO - Dag name:compress_file_on_upload and current dag run status:running
+[2025-04-22T11:38:43.920+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-22T11:38:44.058+0000] {python.py:75} INFO - Poking callable: <function check_for_files at 0x7fc60c12e700>
+[2025-04-22T11:39:40.121+0000] {job.py:229} INFO - Heartbeat recovered after 188.66 seconds
+[2025-04-22T11:39:40.265+0000] {local_task_job_runner.py:266} INFO - Task exited with return code -9. For more information, see https://***.apache.org/docs/apache-***/stable/troubleshooting.html#LocalTaskJob-killed
+[2025-04-22T11:39:41.706+0000] {standard_task_runner.py:217} INFO - Process not found (most likely exited), stop collecting metrics
+[2025-04-22T11:39:56.922+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-22T11:39:56.935+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

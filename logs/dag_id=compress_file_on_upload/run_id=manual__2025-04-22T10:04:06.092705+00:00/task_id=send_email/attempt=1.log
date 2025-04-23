@@ -1,0 +1,32 @@
+[2025-04-22T10:04:20.040+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-22T10:04:20.061+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: compress_file_on_upload.send_email manual__2025-04-22T10:04:06.092705+00:00 [queued]>
+[2025-04-22T10:04:20.070+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: compress_file_on_upload.send_email manual__2025-04-22T10:04:06.092705+00:00 [queued]>
+[2025-04-22T10:04:20.071+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-04-22T10:04:20.233+0000] {taskinstance.py:2890} INFO - Executing <Task(EmailOperator): send_email> on 2025-04-22 10:04:06.092705+00:00
+[2025-04-22T10:04:20.240+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=312) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-04-22T10:04:20.242+0000] {standard_task_runner.py:72} INFO - Started process 314 to run task
+[2025-04-22T10:04:20.242+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'compress_file_on_upload', 'send_email', 'manual__2025-04-22T10:04:06.092705+00:00', '--job-id', '181', '--raw', '--subdir', 'DAGS_FOLDER/minio_file_compression_and_email.py', '--cfg-path', '/tmp/tmpy3e54gcy']
+[2025-04-22T10:04:20.243+0000] {standard_task_runner.py:105} INFO - Job 181: Subtask send_email
+[2025-04-22T10:04:20.286+0000] {task_command.py:467} INFO - Running <TaskInstance: compress_file_on_upload.send_email manual__2025-04-22T10:04:06.092705+00:00 [running]> on host 218dff27a00b
+[2025-04-22T10:04:20.369+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='compress_file_on_upload' AIRFLOW_CTX_TASK_ID='send_email' AIRFLOW_CTX_EXECUTION_DATE='2025-04-22T10:04:06.092705+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-22T10:04:06.092705+00:00'
+[2025-04-22T10:04:20.371+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-22T10:04:20.371+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-22T10:04:20.372+0000] {logging_mixin.py:190} INFO - Current task name:send_email state:running start_date:2025-04-22 10:04:20.061974+00:00
+[2025-04-22T10:04:20.372+0000] {logging_mixin.py:190} INFO - Dag name:compress_file_on_upload and current dag run status:running
+[2025-04-22T10:04:20.372+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-22T10:04:20.381+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/utils/email.py:155: RemovedInAirflow3Warning: Fetching SMTP credentials from configuration variables will be deprecated in a future release. Please set credentials using a connection instead.
+  send_mime_email(e_from=mail_from, e_to=recipients, mime_msg=msg, conn_id=conn_id, dryrun=dryrun)
+
+[2025-04-22T10:04:20.382+0000] {email.py:272} INFO - Email alerting: attempt 1
+[2025-04-22T10:04:22.140+0000] {email.py:283} INFO - Sent an alert email to ['recipient@example.com']
+[2025-04-22T10:04:24.147+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-22T10:04:24.148+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=compress_file_on_upload, task_id=send_email, run_id=manual__2025-04-22T10:04:06.092705+00:00, execution_date=20250422T100406, start_date=20250422T100420, end_date=20250422T100424
+[2025-04-22T10:04:24.193+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-04-22T10:04:24.193+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-04-22T10:04:24.194+0000] {logging_mixin.py:190} INFO - Dag name:compress_file_on_upload queued_at:2025-04-22 10:04:06.114219+00:00
+[2025-04-22T10:04:24.194+0000] {logging_mixin.py:190} INFO - Task hostname:218dff27a00b operator:EmailOperator
+[2025-04-22T10:04:24.236+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-22T10:04:24.264+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-22T10:04:24.269+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
